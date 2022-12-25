@@ -3,8 +3,10 @@ import { dataReducer } from "./reducer.js";
 
 // we will be able access redux store from this
 
-const rootReducer = combineReducers({
-    datas: dataReducer
-});
+const rootReducer = () => {
+    return combineReducers({
+        datas: dataReducer
+    });
+};
 
 export default rootReducer;
